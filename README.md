@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextJs-Blog-Posts
+Dibuat dengan menggunakan NextJs dan Tailwind CSS. Aplikasi ini menggunakan fake data dari public API [GO REST](https://gorest.co.in/)
 
-## Getting Started
+Secara sederhana, aplikasi ini terdiri dari bagian:
+- Posts
+- Users
 
-First, run the development server:
+## Posts
+Bagian Posts terdiri dari 2 bagian, yaitu:
+- Post List: 
+  - Menampilkan list post yang didapatkan dari [GO REST](https://gorest.co.in/).
+  - Dapat diakses dengan menggunakan Navbar bagian "Posts"
+  - Memiliki path `/`
+  - Support pagination
+- Post Detail: 
+  - Menampilkan detil post beserta komen dan user yang didapatkan dari [GO REST](https://gorest.co.in/).
+  - Dapat diakses dengan menekan post di post list, yang ingin dilihat detilnya.
+  - Memiliki path `/post/[id]`
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Users
+Pada bagian ini, dapat dilakukan CRUD users. Bagian Users terdiri dari 4 bagian, yaitu:
+- Users Page (Read users): 
+  - Menampilkan data users yang didapatkan dari [GO REST](https://gorest.co.in/).
+  - Dapat diakses dengan menggunakan Navbar bagian "Users"
+  - Memiliki path `/users`
+  - Support pagination
+  - Dapat melakukan search user berdasarkan name, email, gender, dan status user
+- Create user
+  - Membuat user baru beserta data user tersebut di [GO REST](https://gorest.co.in/)
+  - Dapat diakses dengan menggunakan Navbar bagian "Create User"
+  - Memiliki path `/create_user`
+  - Membutuhkan [access token](https://gorest.co.in/my-account/access-tokens)
+- Edit user
+  - Melakukan update user di [GO REST](https://gorest.co.in/)
+  - Dapat dilakukan dengan menekan icon edit di user yang ingin diupdate di Users Page
+  - Memiliki path `/edit_user/[id]`
+  - Membutuhkan [access token](https://gorest.co.in/my-account/access-tokens)
+- Delete user
+  - Melakukan delete user di [GO REST](https://gorest.co.in/)
+  - Dapat dilakukan dengan menekan icon delete di user yang ingin didelete di Users Page
+  - Memiliki path `/delete_user/[id]`
+  - Membutuhkan [access token](https://gorest.co.in/my-account/access-tokens)
