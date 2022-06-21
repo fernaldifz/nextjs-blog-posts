@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import InputText from "../../../components/InputText";
 import Link from "next/link"
 
-export default function edit_user({ user }) {
+export default function Edit_user({ user }) {
     const [accessToken, setAccessToken] = useState("")
     const [name, setName] = useState(user.name);
     const [email, setEmail] = useState(user.email)

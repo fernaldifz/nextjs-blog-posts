@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import InputText from "../components/InputText";
 import Link from "next/link"
 
-export default function create_user() {
+export default function Create_user() {
     const [accessToken, setAccessToken] = useState("")
     const [name, setName] = useState("");
     const [email, setEmail] = useState("")

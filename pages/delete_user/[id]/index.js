@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import InputText from "../../../components/InputText";
 import Link from "next/link"
 
-export default function delete_user({ user }) {
+export default function Delete_user({ user }) {
     const [accessToken, setAccessToken] = useState("")
     const [submitted, setSubmitted] = useState(false)
     const [error, setError] = useState("")

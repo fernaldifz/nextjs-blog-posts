@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import UserList from "../components/UserList"
 import Buttons from "../components/Buttons"
 
-export default function users() {
+export default function sers() {
     const [users, setUsers] = useState([])
     const [page, setPage] = useState(1)
     const [nextPageIsAvailable, setNextPageIsAvailable] = useState(true)
