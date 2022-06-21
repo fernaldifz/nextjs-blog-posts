@@ -1,6 +1,8 @@
 # NextJs-Blog-Posts
 Dibuat dengan menggunakan NextJs dan Tailwind CSS. Aplikasi ini menggunakan fake data dari public API [GO REST](https://gorest.co.in/)
 
+Link deployment: https://nextjs-blog-posts-kappa.vercel.app/
+
 Secara sederhana, aplikasi ini terdiri dari bagian:
 - Posts
 - Users
