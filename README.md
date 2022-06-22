@@ -1,13 +1,20 @@
 # NextJs-Blog-Posts
-Dibuat dengan menggunakan NextJs dan Tailwind CSS. Aplikasi ini menggunakan fake data dari public API [GO REST](https://gorest.co.in/)
+Dibuat dengan menggunakan NextJs dan Tailwind CSS. Aplikasi ini menggunakan fake data dari public API [GO REST](https://gorest.co.in/).
 
 Link deployment: https://nextjs-blog-posts-kappa.vercel.app/
 
+
+Aplikasi dapat dijalankan dengan menjalankan perintah
+```bash 
+npm run dev
+```
+
+## Penjelasan Singkat
 Secara sederhana, aplikasi ini terdiri dari bagian:
 - Posts
 - Users
 
-## Posts
+### Posts
 Bagian Posts terdiri dari 2 bagian, yaitu:
 - Post List: 
   - Menampilkan list post yang didapatkan dari [GO REST](https://gorest.co.in/).
@@ -19,7 +26,7 @@ Bagian Posts terdiri dari 2 bagian, yaitu:
   - Dapat diakses dengan menekan post di post list, yang ingin dilihat detilnya.
   - Memiliki path `/post/[id]`
 
-## Users
+### Users
 Pada bagian ini, dapat dilakukan CRUD users. Bagian Users terdiri dari 4 bagian, yaitu:
 - Users Page (Read users): 
   - Menampilkan data users yang didapatkan dari [GO REST](https://gorest.co.in/).
